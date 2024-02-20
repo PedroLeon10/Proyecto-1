@@ -90,7 +90,7 @@ namespace project_u5.view
             }
             if (cboTipo.SelectedItem == null)
             {
-                error.SetError(cboAreas, "Por favor, seleccione un tipo de adquisición");
+                error.SetError(cboTipo, "Por favor, seleccione un tipo de adquisición");
             }
             DateTime fechaHora = mcFecha.SelectionStart;
             String fecha = fechaHora.ToShortDateString();
