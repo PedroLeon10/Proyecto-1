@@ -9,6 +9,7 @@ namespace project_u5.data
         public static MySqlConnection CurrentConnection;
 
         public static String ConnectionString = @"server=localhost;uid=root;pwd=root;database=u1p1";
+        //public static String ConnectionString = @"server=20.121.136.31;uid=teamone;pwd=passone;database=u1p1";
 
         public static bool Connect()
         {
