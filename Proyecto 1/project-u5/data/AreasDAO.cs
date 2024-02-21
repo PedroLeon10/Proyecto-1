@@ -1,10 +1,8 @@
 ﻿using MySql.Data.MySqlClient;
 using project_u5.model;
-using project_u5.view;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Windows.Forms;
 
 namespace project_u5.data
 {
@@ -15,7 +13,7 @@ namespace project_u5.data
             List<CLSArea> stores = new List<CLSArea>();
             if (Connection.Connect())
             {
-                //MySqlTransaction trans = Connection.CurrentConnection.BeginTransaction();
+                MySqlTransaction trans = Connection.CurrentConnection.BeginTransaction();
                 try
                 {
                     String sentence = "obtenerTodasAreas";
@@ -42,13 +40,12 @@ namespace project_u5.data
                         stores.Add(area);
                     }
                     command.Dispose();
-                    //trans.Commit();
+                    trans.Commit();
                     return stores;
                 }
                 catch (Exception e)
                 {
-                    //MessageBox.Show("aqui");
-                    //trans.Rollback();
+                    trans.Rollback();
                     return stores;
                 }
                 finally
@@ -67,7 +64,7 @@ namespace project_u5.data
             CLSArea area = null;
             if (Connection.Connect())
             {
-                //MySqlTransaction trans = Connection.CurrentConnection.BeginTransaction();
+                MySqlTransaction trans = Connection.CurrentConnection.BeginTransaction();
                 try
                 {
                     String sentence = "obtenerArea";
@@ -90,12 +87,12 @@ namespace project_u5.data
                             );
                     }
                     command.Dispose();
-                    //trans.Commit();
+                    trans.Commit();
                     return area;
                 }
                 catch (Exception e)
                 {
-                    //trans.Rollback();
+                    trans.Rollback();
                     return area;
                 }
                 finally

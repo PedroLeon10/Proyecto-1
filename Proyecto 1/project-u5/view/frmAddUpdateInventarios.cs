@@ -1,13 +1,8 @@
-﻿using Org.BouncyCastle.Security;
-using project_u5.data;
+﻿using project_u5.data;
 using project_u5.model;
 using System;
 using System.Collections.Generic;
-using System.Media;
-using System.Net;
-using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using System.Xml.Linq;
 
 namespace project_u5.view
 {
@@ -67,40 +62,50 @@ namespace project_u5.view
             if (txtNombre.Text == "")
             {
                 error.SetError(txtNombre, "Por favor, escriba un nombre");
+                return;
             }
             if (txtDescripcion.Text == "")
             {
-                error.SetError(txtDescripcion, "Por favor, escriba una Descripcion");
+                error.SetError(txtDescripcion, "Por favor, escriba una descripcion");
+                return;
             }
             if (txtSerie.Text == "")
             {
                 error.SetError(txtSerie, "Por favor, escriba una serie");
+                return;
             }
             if (txtColor.Text == "")
             {
                 error.SetError(txtColor, "Por favor, escriba un color");
-            }
+                return;
+            }/*
             if (txtObservaciones.Text == "")
             {
                 error.SetError(txtObservaciones, "Por favor, escriba observaciones");
-            }
+                return;
+            }*/
             if(cboAreas.SelectedItem == null)
             {
                 error.SetError(cboAreas, "Por favor, seleccione una área");
+                return;
             }
             if (cboTipo.SelectedItem == null)
             {
                 error.SetError(cboTipo, "Por favor, seleccione un tipo de adquisición");
+                return;
             }
+
             DateTime fechaHora = mcFecha.SelectionStart;
+            if (fechaHora == null) fechaHora = DateTime.Now; 
             String fecha = fechaHora.ToShortDateString();
             CLSArea area = (CLSArea)cboAreas.SelectedItem;
+
             if (inventario == null)
             {
                 CLSInventario t = new CLSInventario(0,
                     area, txtNombre.Text, txtDescripcion.Text, txtSerie.Text, txtColor.Text,
                     fecha, cboTipo.SelectedItem.ToString(), txtObservaciones.Text);
-                if (InventariosDAO.AddInventario(t) != 0) MessageBox.Show("Agregado");
+                if (InventariosDAO.AddInventario(t) != 0) MessageBox.Show("Nuevo registro agregado.");
                 txtNombre.Text = "";
                 txtDescripcion.Text = "";
                 txtSerie.Text = "";

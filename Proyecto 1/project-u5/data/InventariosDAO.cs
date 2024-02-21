@@ -3,7 +3,6 @@ using project_u5.model;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Transactions;
 
 namespace project_u5.data
 {
@@ -14,7 +13,7 @@ namespace project_u5.data
             List<CLSInventario> inventarios = null;
             if (Connection.Connect())
             {
-                //MySqlTransaction trans = Connection.CurrentConnection.BeginTransaction();
+                MySqlTransaction trans = Connection.CurrentConnection.BeginTransaction();
                 try
                 {
                     String sentence = "obtenerTodoInventario";
@@ -51,12 +50,12 @@ namespace project_u5.data
                         inventarios.Add(inventario);
                     }
                     command.Dispose();
-                    //trans.Commit();
+                    trans.Commit();
                     return inventarios;
                 }
                 catch (Exception e)
                 {
-                    //trans.Rollback();
+                    trans.Rollback();
                     return inventarios;
                 }
                 finally
@@ -76,7 +75,7 @@ namespace project_u5.data
             CLSInventario inventario = null;
             if (Connection.Connect())
             {
-                //MySqlTransaction trans = Connection.CurrentConnection.BeginTransaction();
+                MySqlTransaction trans = Connection.CurrentConnection.BeginTransaction();
                 try
                 {
                     String sentence = "obtenerRegistroInventario";
@@ -111,12 +110,12 @@ namespace project_u5.data
                          );
                     }
                     command.Dispose();
-                    //trans.Commit();
+                    trans.Commit();
                     return inventario;
                 }
                 catch (Exception e)
                 {
-                    //trans.Rollback();
+                    trans.Rollback();
                     return inventario;
                 }
                 finally

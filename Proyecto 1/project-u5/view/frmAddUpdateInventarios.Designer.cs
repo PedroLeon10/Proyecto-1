@@ -62,20 +62,22 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(832, 52);
+            this.panel1.Size = new System.Drawing.Size(653, 52);
             this.panel1.TabIndex = 62;
             // 
             // btnClose
             // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.btnClose.BackColor = System.Drawing.Color.Gray;
+            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnClose.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnClose.Location = new System.Drawing.Point(769, 6);
+            this.btnClose.Location = new System.Drawing.Point(588, 9);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(51, 34);
+            this.btnClose.Size = new System.Drawing.Size(35, 34);
             this.btnClose.TabIndex = 140;
             this.btnClose.Text = "X";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -99,11 +101,12 @@
             // 
             // lbNombre
             // 
+            this.lbNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbNombre.AutoSize = true;
             this.lbNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.lbNombre.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNombre.ForeColor = System.Drawing.SystemColors.Window;
-            this.lbNombre.Location = new System.Drawing.Point(11, 82);
+            this.lbNombre.Location = new System.Drawing.Point(31, 66);
             this.lbNombre.Name = "lbNombre";
             this.lbNombre.Size = new System.Drawing.Size(64, 21);
             this.lbNombre.TabIndex = 141;
@@ -111,11 +114,12 @@
             // 
             // lbDescripcion
             // 
+            this.lbDescripcion.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbDescripcion.AutoSize = true;
             this.lbDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.lbDescripcion.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDescripcion.ForeColor = System.Drawing.SystemColors.Window;
-            this.lbDescripcion.Location = new System.Drawing.Point(11, 118);
+            this.lbDescripcion.Location = new System.Drawing.Point(30, 125);
             this.lbDescripcion.Name = "lbDescripcion";
             this.lbDescripcion.Size = new System.Drawing.Size(109, 21);
             this.lbDescripcion.TabIndex = 145;
@@ -123,11 +127,12 @@
             // 
             // lbSerie
             // 
+            this.lbSerie.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbSerie.AutoSize = true;
             this.lbSerie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.lbSerie.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSerie.ForeColor = System.Drawing.SystemColors.Window;
-            this.lbSerie.Location = new System.Drawing.Point(11, 174);
+            this.lbSerie.Location = new System.Drawing.Point(30, 234);
             this.lbSerie.Name = "lbSerie";
             this.lbSerie.Size = new System.Drawing.Size(55, 21);
             this.lbSerie.TabIndex = 144;
@@ -135,42 +140,40 @@
             // 
             // lbFechaAd
             // 
+            this.lbFechaAd.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbFechaAd.AutoSize = true;
             this.lbFechaAd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.lbFechaAd.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFechaAd.ForeColor = System.Drawing.SystemColors.Window;
-            this.lbFechaAd.Location = new System.Drawing.Point(11, 203);
+            this.lbFechaAd.Location = new System.Drawing.Point(371, 234);
             this.lbFechaAd.Name = "lbFechaAd";
-            this.lbFechaAd.Size = new System.Drawing.Size(91, 21);
+            this.lbFechaAd.Size = new System.Drawing.Size(163, 21);
             this.lbFechaAd.TabIndex = 146;
-            this.lbFechaAd.Text = "Fecha ad.";
+            this.lbFechaAd.Text = "Fecha adquisición";
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDescripcion.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.txtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDescripcion.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtDescripcion.Location = new System.Drawing.Point(135, 118);
+            this.txtDescripcion.Location = new System.Drawing.Point(35, 149);
             this.txtDescripcion.MaxLength = 45;
+            this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(656, 26);
+            this.txtDescripcion.Size = new System.Drawing.Size(248, 77);
             this.txtDescripcion.TabIndex = 143;
             this.txtDescripcion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtNombre
             // 
-            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNombre.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtNombre.Location = new System.Drawing.Point(135, 82);
+            this.txtNombre.Location = new System.Drawing.Point(35, 90);
             this.txtNombre.MaxLength = 45;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(248, 26);
@@ -179,13 +182,14 @@
             // 
             // cboAreas
             // 
+            this.cboAreas.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.cboAreas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.cboAreas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboAreas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cboAreas.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboAreas.ForeColor = System.Drawing.SystemColors.Menu;
             this.cboAreas.FormattingEnabled = true;
-            this.cboAreas.Location = new System.Drawing.Point(135, 386);
+            this.cboAreas.Location = new System.Drawing.Point(375, 92);
             this.cboAreas.MaxDropDownItems = 6;
             this.cboAreas.Name = "cboAreas";
             this.cboAreas.Size = new System.Drawing.Size(248, 25);
@@ -193,13 +197,12 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAceptar.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnAceptar.BackColor = System.Drawing.Color.Gray;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAceptar.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnAceptar.Location = new System.Drawing.Point(281, 472);
+            this.btnAceptar.Location = new System.Drawing.Point(216, 458);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(210, 34);
             this.btnAceptar.TabIndex = 148;
@@ -209,11 +212,12 @@
             // 
             // lbAreas
             // 
+            this.lbAreas.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbAreas.AutoSize = true;
             this.lbAreas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.lbAreas.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAreas.ForeColor = System.Drawing.SystemColors.Window;
-            this.lbAreas.Location = new System.Drawing.Point(11, 386);
+            this.lbAreas.Location = new System.Drawing.Point(371, 66);
             this.lbAreas.Name = "lbAreas";
             this.lbAreas.Size = new System.Drawing.Size(55, 21);
             this.lbAreas.TabIndex = 149;
@@ -221,11 +225,12 @@
             // 
             // lbObservaciones
             // 
+            this.lbObservaciones.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbObservaciones.AutoSize = true;
             this.lbObservaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.lbObservaciones.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbObservaciones.ForeColor = System.Drawing.SystemColors.Window;
-            this.lbObservaciones.Location = new System.Drawing.Point(2, 426);
+            this.lbObservaciones.Location = new System.Drawing.Point(371, 125);
             this.lbObservaciones.Name = "lbObservaciones";
             this.lbObservaciones.Size = new System.Drawing.Size(127, 21);
             this.lbObservaciones.TabIndex = 150;
@@ -233,14 +238,12 @@
             // 
             // txtSerie
             // 
-            this.txtSerie.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSerie.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtSerie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.txtSerie.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSerie.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSerie.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtSerie.Location = new System.Drawing.Point(135, 174);
+            this.txtSerie.Location = new System.Drawing.Point(35, 257);
             this.txtSerie.MaxLength = 45;
             this.txtSerie.Name = "txtSerie";
             this.txtSerie.Size = new System.Drawing.Size(248, 26);
@@ -249,33 +252,34 @@
             // 
             // mcFecha
             // 
-            this.mcFecha.Location = new System.Drawing.Point(135, 212);
+            this.mcFecha.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.mcFecha.Location = new System.Drawing.Point(375, 266);
             this.mcFecha.Name = "mcFecha";
             this.mcFecha.TabIndex = 152;
             // 
             // txtObservaciones
             // 
-            this.txtObservaciones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtObservaciones.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtObservaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.txtObservaciones.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtObservaciones.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtObservaciones.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtObservaciones.Location = new System.Drawing.Point(135, 426);
+            this.txtObservaciones.Location = new System.Drawing.Point(375, 149);
             this.txtObservaciones.MaxLength = 45;
+            this.txtObservaciones.Multiline = true;
             this.txtObservaciones.Name = "txtObservaciones";
-            this.txtObservaciones.Size = new System.Drawing.Size(656, 26);
+            this.txtObservaciones.Size = new System.Drawing.Size(248, 77);
             this.txtObservaciones.TabIndex = 153;
             this.txtObservaciones.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lbColor
             // 
+            this.lbColor.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbColor.AutoSize = true;
             this.lbColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.lbColor.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbColor.ForeColor = System.Drawing.SystemColors.Window;
-            this.lbColor.Location = new System.Drawing.Point(409, 212);
+            this.lbColor.Location = new System.Drawing.Point(31, 303);
             this.lbColor.Name = "lbColor";
             this.lbColor.Size = new System.Drawing.Size(55, 21);
             this.lbColor.TabIndex = 154;
@@ -283,18 +287,20 @@
             // 
             // lbTipo
             // 
+            this.lbTipo.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbTipo.AutoSize = true;
             this.lbTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.lbTipo.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTipo.ForeColor = System.Drawing.SystemColors.Window;
-            this.lbTipo.Location = new System.Drawing.Point(409, 264);
+            this.lbTipo.Location = new System.Drawing.Point(31, 379);
             this.lbTipo.Name = "lbTipo";
-            this.lbTipo.Size = new System.Drawing.Size(154, 21);
+            this.lbTipo.Size = new System.Drawing.Size(181, 21);
             this.lbTipo.TabIndex = 155;
-            this.lbTipo.Text = "Tipo Adquisición";
+            this.lbTipo.Text = "Tipo de adquisición";
             // 
             // cboTipo
             // 
+            this.cboTipo.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.cboTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.cboTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -304,7 +310,7 @@
             this.cboTipo.Items.AddRange(new object[] {
             "Directa",
             "Indirecta"});
-            this.cboTipo.Location = new System.Drawing.Point(569, 264);
+            this.cboTipo.Location = new System.Drawing.Point(35, 403);
             this.cboTipo.MaxDropDownItems = 6;
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(248, 25);
@@ -312,14 +318,12 @@
             // 
             // txtColor
             // 
-            this.txtColor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtColor.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.txtColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtColor.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtColor.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtColor.Location = new System.Drawing.Point(569, 212);
+            this.txtColor.Location = new System.Drawing.Point(34, 333);
             this.txtColor.MaxLength = 45;
             this.txtColor.Name = "txtColor";
             this.txtColor.Size = new System.Drawing.Size(248, 26);
@@ -331,7 +335,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.ClientSize = new System.Drawing.Size(832, 518);
+            this.ClientSize = new System.Drawing.Size(653, 515);
             this.Controls.Add(this.txtColor);
             this.Controls.Add(this.cboTipo);
             this.Controls.Add(this.lbTipo);

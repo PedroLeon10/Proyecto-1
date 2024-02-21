@@ -90,7 +90,7 @@
             this.lbAreas.Name = "lbAreas";
             this.lbAreas.Size = new System.Drawing.Size(67, 25);
             this.lbAreas.TabIndex = 1;
-            this.lbAreas.Text = "Areas";
+            this.lbAreas.Text = "Áreas";
             // 
             // btnUpdate
             // 

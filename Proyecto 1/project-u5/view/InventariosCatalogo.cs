@@ -1,9 +1,7 @@
-﻿using Org.BouncyCastle.Security;
-using project_u5.data;
+﻿using project_u5.data;
 using project_u5.model;
 using System;
 using System.Collections.Generic;
-using System.Transactions;
 using System.Windows.Forms;
 
 namespace project_u5.view
@@ -74,7 +72,7 @@ namespace project_u5.view
             }
             else
             {
-                MessageBox.Show("Seleccione lo que desea editar");
+                MessageBox.Show("Seleccione el registro que desea editar.");
             }
 
         }
@@ -86,12 +84,12 @@ namespace project_u5.view
                 int index = dgvInventarios.CurrentRow.Index;
 
                 CLSInventario cI = inventarios[index];
-                if (InventariosDAO.DeleteInventario(cI.ID)) MessageBox.Show("Se elimino");
+                if (InventariosDAO.DeleteInventario(cI.ID)) MessageBox.Show("Se eliminó el registro.");
                 LlenarTabla();
             }
             else
             {
-                MessageBox.Show("Seleccione lo que desea eliminar");
+                MessageBox.Show("Seleccione el registro que desea eliminar.");
             }
         }
     }

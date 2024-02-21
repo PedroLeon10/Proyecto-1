@@ -1,10 +1,7 @@
-﻿using Org.BouncyCastle.Security;
-using project_u5.data;
+﻿using project_u5.data;
 using project_u5.model;
 using System;
 using System.Collections.Generic;
-using System.Text.RegularExpressions;
-using System.Transactions;
 using System.Windows.Forms;
 
 namespace project_u5.view
@@ -80,8 +77,8 @@ namespace project_u5.view
 
                 CLSArea a = areas[index];
                 int codigo = AreasDAO.DeleteArea(a.ID);
-                if (codigo == 1) MessageBox.Show("Se elimino el area");
-                else if (codigo == 1451) MessageBox.Show("Error en eliminar: " + a.Nombre + ". Conflicto de referencia");
+                if (codigo == 1) MessageBox.Show("Se elimino el área");
+                else if (codigo == 1451) MessageBox.Show("Error al eliminar: " + a.Nombre + ". Conflicto de referencia");
                 LoadData();
             }
             else
