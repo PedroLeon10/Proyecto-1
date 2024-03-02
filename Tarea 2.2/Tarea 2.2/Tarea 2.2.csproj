@@ -70,7 +70,7 @@
     <Content Include="css\AgregarLibros.css" />
     <Content Include="css\Index.css" />
     <Content Include="View\InsertarLibros.aspx" />
-    <Content Include="View\Index.aspx" />
+    <Content Include="View\index.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -84,12 +84,12 @@
       <DependentUpon>InsertarLibros.aspx</DependentUpon>
     </Compile>
     <Compile Include="Model\Libro.cs" />
-    <Compile Include="View\Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
+    <Compile Include="View\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\Index.aspx.designer.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
+    <Compile Include="View\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

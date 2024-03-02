@@ -83,7 +83,7 @@ namespace Tarea_2._2
 
         protected void btnVolver_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Index.aspx");
+            Response.Redirect("index.aspx");
         }
     }
 }

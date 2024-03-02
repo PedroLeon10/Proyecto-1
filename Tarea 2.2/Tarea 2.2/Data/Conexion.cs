@@ -15,8 +15,8 @@ namespace Tarea_2._2.Data
         {
             // Establecer la cadena de conexión
             string connectionString =
-                "Data Source=DESKTOP-NO7QIT0\\MSSQLSERVER2;Initial Catalog=u2p2;User ID=sa;Password=root;";
-            //string connectionString = "Data Source=Windows-Server;Initial Catalog=u2p2;User ID=sa;Password=La toalla del mojado69;";
+                "Data Source=Windows-Server;Initial Catalog=u2p2;User ID=sa;Password=La toalla del mojado 69;";
+            
             // Crear una conexión a la base de datos
             using (connection = new SqlConnection(connectionString))
             {
